@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Drink Ratings</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Energy Drink Ratings</h1>
+        <div class="controls">
+            <select id="sortBy">
+                <option value="name">Sort by Name</option>
+                <option value="rating">Sort by Rating</option>
+                <option value="price">Sort by Price</option>
+                <option value="caffeine">Sort by Caffeine Content</option>
+            </select>
+        </div>
+    </header>
+
+    <main>
+        <div class="drinks-container">
+            <div class="drink-card" data-avg-rating="4.1" data-price="2.99" data-caffeine="80">
+                <img src="https://example.com/redbull.jpg" alt="Red Bull" class="drink-image">
+                <h2>Red Bull</h2>
+                <div class="drink-info">
+                    <p>Price: $2.99</p>
+                    <p>Caffeine: 80mg</p>
+                </div>
+                <div class="flavors">
+                    <div class="flavor-item">
+                        <h3>Original</h3>
+                        <div class="rating">
+                            <span class="stars" data-brand="redbull" data-flavor="original">
+                                ★★★★★
+                            </span>
+                            <span class="rating-value">4.2</span>
+                        </div>
+                    </div>
+                    <div class="flavor-item">
+                        <h3>Sugar Free</h3>
+                        <div class="rating">
+                            <span class="stars" data-brand="redbull" data-flavor="sugarfree">
+                                ★★★★★
+                            </span>
+                            <span class="rating-value">4.0</span>
+                        </div>
+                    </div>
+                    <div class="flavor-item">
+                        <h3>Tropical</h3>
+                        <div class="rating">
+                            <span class="stars" data-brand="redbull" data-flavor="tropical">
+                                ★★★★★
+                            </span>
+                            <span class="rating-value">4.1</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="drink-card" data-avg-rating="4.4" data-price="3.49" data-caffeine="160">
+                <img src="https://example.com/monster.jpg" alt="Monster" class="drink-image">
+                <h2>Monster</h2>
+                <div class="drink-info">
+                    <p>Price: $3.49</p>
+                    <p>Caffeine: 160mg</p>
+                </div>
+                <div class="flavors">
+                    <div class="flavor-item">
+                        <h3>Original Green</h3>
+                        <div class="rating">
+                            <span class="stars" data-brand="monster" data-flavor="original">
+                                ★★★★★
+                            </span>
+                            <span class="rating-value">4.3</span>
+                        </div>
+                    </div>
+                    <div class="flavor-item">
+                        <h3>Ultra Zero</h3>
+                        <div class="rating">
+                            <span class="stars" data-brand="monster" data-flavor="ultrazero">
+                                ★★★★★
+                            </span>
+                            <span class="rating-value">4.5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="drink-card" data-avg-rating="4.2" data-price="2.79" data-caffeine="120">
+                <img src="https://example.com/rockstar.jpg" alt="Rockstar" class="drink-image">
+                <h2>Rockstar</h2>
+                <div class="drink-info">
+                    <p>Price: $2.79</p>
+                    <p>Caffeine: 120mg</p>
+                </div>
+                <div class="flavors">
+                    <div class="flavor-item">
+                        <h3>Original</h3>
+                        <div class="rating">
+                            <span class="stars" data-brand="rockstar" data-flavor="original">
+                                ★★★★★
+                            </span>
+                            <span class="rating-value">4.2</span>
+                        </div>
+                    </div>
+                    <div class="flavor-item">
+                        <h3>Punched</h3>
+                        <div class="rating">
+                            <span class="stars" data-brand="rockstar" data-flavor="punched">
+                                ★★★★★
+                            </span>
+                            <span class="rating-value">4.3</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html> 
